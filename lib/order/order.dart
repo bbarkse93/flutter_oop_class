@@ -9,6 +9,10 @@ class Order {
 
   Order({required this.memberId,  required this.itemName, required this.itemPrice, required this.discountPrice});
 
+  int calculateDiscount(){
+    return itemPrice - discountPrice;
+  }
+
   @override
   String toString() {
     return 'Order{memberId: $memberId, itemName: $itemName, itemPrice: $itemPrice, discountPrice: $discountPrice}';
