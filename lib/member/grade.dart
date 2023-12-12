@@ -1,0 +1,1 @@
+enum Grade { BASIC, VIP }
